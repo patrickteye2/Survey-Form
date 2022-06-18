@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><p>rental-form</p></title>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+    <body>
+        <h1 id="title">House Rentals Form</h1>
+        <p id="description">
+            Thank you for taking time off your busy schedule 
+            to help us make a difference
+        </p>
+        <form id="survey-form">
+            <div>
+                <label for="name" id="name-label">Name</label><br>
+                <input id="name" placeholder="FULL NAME" type="text" required/> <br><br>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email</label><br>
+                <input id="email" type="email" placeholder="email@address.com" required> <br><br>
+            </div>
+            <div>
+                <label for="number" id="number-label">Age</label><br>
+                <input id="number" type="number" placeholder="Age" min="10" max="85"> <br><br>
+            </div>
+            <div>
+                <label for="dropdown">Employment Status</label> <br>
+                <select id="dropdown"> 
+                    <option value="student">Student</option>
+                    <option value="Full-Time">Full Time</option>
+                    <option value="Part-Time">Part Time</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="Other">Other</option>
+                </select> <br><br>
+            </div>
+            <div >
+               <p>What is your sex</p>
+               <label>
+                <input name="sex" value="male" type="radio" class="input-radio" checked>
+                Male
+               </label>
+               <label>
+                <input name="sex" value="female" type="radio" class="input-radio">
+                Female
+               </label>
+               <label>
+                <input name="sex" value="other" type="radio" class="input-radio">
+                Other
+               </label>
+            </div>
+            <div id="check">
+                <p>Choose which option you prefer (Check all that apply)</p>
+                <input type="checkbox" value="Regular-House">
+                <label for="Regular-House">Regular House</label> <br>
+                <input type="checkbox" value="Apartment">
+                <label for="Apartment">Apartment</label><br>
+                <input type="checkbox" value="hut">
+                <label for="hut">Hut</label> <br>
+                <input type="checkbox" value="cabin">
+                <label for="cabin">Cabin</label> <br>
+                <input type="checkbox" value="barn">
+                <label for="barn">Barn</label> <br>
+                <input type="checkbox" value="mansion">
+                <label for="mansion">Mansion</label> <br>
+                <input type="checkbox" value="castle">
+                <label for="castle">Castle</label> <br>
+                <input type="checkbox" value="bungalow">
+                <label for="bungalow">Bungalow</label> <br>
+            </div>
+            <div id="review-text">
+                <label for="review">Kindly leave behind your comments</label>
+            </div>
+        
+            <div class="center-textArea">
+                <textarea id="review" name="review" rows="4" cols="50"></textarea>
+            </div>
+            
+            <div class="center-div">
+                <input  id="submit" value="SUBMIT" type="submit" id="submit">
+            </div>
+        </form>
+    </body>
+</html>
